@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz Acesa</title>
+</head>
+<body>
+    <script>
+        let luzAcesa = false;
+        let escolha = parseInt(prompt("Digite 1 para acender a luz ou 0 para apagar."));
+
+        if(escolha === 1) {
+            luzAcesa = true;
+        } else if (escolha === 0) {
+            luzAcesa =  false;
+        }
+
+        if (luzAcesa) {
+            console.log("A luz está acesa");
+        } else {
+            console.log("A luz está1 apagada");
+        }
+    </script>
+    
+</body>
+</html>

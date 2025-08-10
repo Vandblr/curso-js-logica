@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto no produto</title>
+</head>
+<body>
+
+    <script>
+        let preco = parseFloat(prompt("Digite o preço do produto").replace("." , ","));
+        let desconto = parseFloat(prompt("Digite a porcentagem de desconto ").replace("." , ","));
+
+        let valorDesconto = preco * (desconto / 100);
+        let valorFinal = preco - valorDesconto;
+
+        console.log("O valor final com desconto é R$ " + valorFinal);
+    </script>
+    
+</body>
+</html>
