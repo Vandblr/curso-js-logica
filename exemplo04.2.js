@@ -171,7 +171,7 @@ function sistemaComMenu() {
             exemploWhile01();
         } else if (opcaoEscolhida === 2) {
             exemploWhile02();
-        } else if (opcaoEscolhida === 3) {
+        } else if (opcaoEscolhida === 3) { 
             descobrirMaiorAltura();
         } else if (opcaoEscolhida === 4) {
             descobrirMenorIdade();
@@ -383,7 +383,7 @@ function exemploComVariasValidacoes() {
             }
         }
 
-        indice = indice + 1;
+        indice = indice + 1; 
     }
 }
 
