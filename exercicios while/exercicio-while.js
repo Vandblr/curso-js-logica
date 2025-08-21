@@ -91,10 +91,10 @@ function exercicio05() {
     100 - sair
    Digite uma opção`;
 
-   let opcao = 0;
+    let opcao = 0;
 
     while (opcao !== 100) {
-        let opcao = parseInt(prompt("Digite uma opção"));
+        opcao = parseInt(prompt("Digite uma opção"));
 
         if (opcao === 1) {
             let nome = prompt("Digite o seu nome");
@@ -108,16 +108,58 @@ function exercicio05() {
             }
         } else if (opcao !== 100) {
             alert("Opção inválida");
-        } else {
-            alert("Sistema Encerrado");
         }
     }
 
+    alert("Sistema Encerrado");
 }
 
 
 function exercicio06() {
 
- 
- 
+let nome = "";
+let indice = 0;
+let lista = "";
+
+while (nome.toLowerCase().trim() !== "fim") {
+    nome = prompt("Digite o nome ou 'fim' para encerrar");
+
+    if (nome.toLowerCase().trim() !== "fim") {
+        lista = lista + nome + "\n";
+
+        indice++;
+    }
+} 
+alert("Nomes cadastrados:\n" + lista + "\nQuantidade de nomes: " + indice);
+
+}
+
+
+function exercicio07() {
+
+    let soma = 0;
+    let indice = 0;
+
+    while (indice < 4) {
+        let precoTexto = (prompt("Digite um preço"));
+        let precoLimpo = precoTexto
+
+        .trim().replace("R$","").replace(",",".");
+
+        let precoNumero = parseFloat(precoLimpo);
+
+        soma = soma + precoNumero;
+        indice++;
+       
+    }
+
+    let media = soma  / 4;
+
+    alert("Total:" + soma.toFixed(2) + "\nMédia: " + media.toFixed(2));
+}
+
+
+
+function exercicio08() {
+
 }
