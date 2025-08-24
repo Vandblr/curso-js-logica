@@ -161,5 +161,66 @@ function exercicio07() {
 
 
 function exercicio08() {
+     
+    let indice = 0;
+    let perguntas = 0;
+    let naoPerguntas = 0;
 
+    while (indice < 5) {
+        let frase = prompt("Digite uma frase (" + (indice+1) + " de 5)").trimEnd();
+
+        if (frase.endsWith("?")) {
+            perguntas++;
+        } else {
+            naoPerguntas++;
+        }
+
+        indice++; 
+    }
+
+    alert("Perguntas: " + perguntas + "\nNão-perguntas: " + naoPerguntas);
 }
+
+
+function exercicio09() {
+
+    let quantidadeVip = 0;
+    let quantidadeOff = 0;
+    let indice = 0;
+
+    while (indice < 5) {
+        let cupom = prompt("Insira um cupom");
+        let norm = cupom.toLowerCase().trim();
+
+        if (norm.startsWith("vip")) {
+            quantidadeVip++;
+        }
+        if (norm.endsWith("off")) {
+            quantidadeOff++;
+        }
+
+        indice++;
+    }
+
+    alert("Quantidade VIP: " + quantidadeVip + "\nQuantidade OFF: " + quantidadeOff);
+}
+
+function exercicio10() {
+
+    let indice = 0;
+    let lista = "";
+
+    while ( indice < 3) {
+        let nome =  prompt("Digite o nome completo (" + (indice+1) + " de 3)").trim();
+        
+        let partes = nome.split(" ");
+        let primeiro = partes[0];
+
+        lista = lista + primeiro + "\n";
+
+        indice++;
+    }
+
+     alert("Primeiros nomes:\n" + lista);
+}
+
