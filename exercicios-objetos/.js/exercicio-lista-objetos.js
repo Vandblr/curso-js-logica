@@ -62,7 +62,7 @@ function listaDeCarros() {
 
     console.log(marcas)
    
-    let carroFiat = carros.filter(carro => carro.marca == "Fiat").map(carro => carro.modelo);
+    let carroFiat = carros.filter(carro => carro.marca == "Fiat").map(carro => carro.marca);
     
     console.log(carroFiat)
 
@@ -88,7 +88,7 @@ function listaDeCarros() {
   console.log(ano)
    
 }
- 
+ listaDeCarros();
 
 
 
